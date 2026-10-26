@@ -36,7 +36,7 @@ Inner pages share one Wix template: road photo on the left, yellow H1, centered 
 | Contact form (Wix Forms) | **Replaced** with an email panel ("Email us" mailto button + copy-address button), at the owner's request |
 | "Let's Chat!" Wix Chat widget | **Removed**, since it is Wix-only. The email panel replaces it. |
 | Wix video player | Native `<video>`, self-hosted MP4, `preload="none"` |
-| YouTube embed | `youtube-nocookie.com` iframe, lazy-loaded |
+| YouTube embed | Standard `youtube.com/embed` iframe (as on Wix), lazy-loaded, plus a "Watch on YouTube" link |
 | "Get in Touch" buttons | Link to `/#contact` (see OWNER-REVIEW.md) |
 
 ## Links

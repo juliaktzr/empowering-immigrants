@@ -284,6 +284,8 @@ address { font-style: normal; }
 .media__video { width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0; background: #0a1428; }
 .media__logo--ktnv { width: min(100%, 330px); background: var(--white); } /* transparent PNG with dark lettering */
 .media__logo--univision { width: 140px; }
+.media__watch { margin-top: -1.25rem; font-size: 14px; color: var(--yellow); }
+.media__watch:hover { color: var(--white); }
 @media (min-width: 800px) { .media__grid { grid-template-columns: 1fr 1fr; } }
 
 /* ---------- Home: Contact ---------- */
