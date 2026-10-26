@@ -23,7 +23,7 @@ const orgJsonLd = {
   logo: new URL('/favicon.svg', Astro.site).href,
   email: CONTACT.emails[0],
   telephone: CONTACT.phone.tel,
-  sameAs: [...new Set([...Object.values(SOCIAL.contact), ...Object.values(SOCIAL.footer)])],
+  sameAs: Object.values(SOCIAL),
 };
 ---
 <!doctype html>

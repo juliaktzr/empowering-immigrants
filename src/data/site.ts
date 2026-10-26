@@ -16,17 +16,10 @@ export const CONTACT = {
   phone: { display: '702-217-3540', tel: '+17022173540' },
 } as const;
 
-// The Wix site links two different Facebook URLs (one in the contact block, one
-// in the footer). Both are kept as published until the owner confirms which is current.
+// The Wix footer linked an older Facebook page; the owner confirmed this one is current.
 export const SOCIAL = {
-  contact: {
-    facebook: 'https://www.facebook.com/empowerimmigrants/',
-    linkedin: 'https://www.linkedin.com/in/jordyn-cambeiro-0293b123a/',
-  },
-  footer: {
-    facebook: 'https://www.facebook.com/Empowering-Immigrants-100953902424549',
-    linkedin: 'https://www.linkedin.com/in/jordyn-cambeiro-0293b123a/',
-  },
+  facebook: 'https://www.facebook.com/empowerimmigrants',
+  linkedin: 'https://www.linkedin.com/in/jordyn-cambeiro-0293b123a/',
 } as const;
 
 export const LEAF_URL = 'https://flash-cards-olive.vercel.app/';

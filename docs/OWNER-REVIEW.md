@@ -38,13 +38,7 @@ screenshots). We removed hidden location data from all of them.
 > Your answer:
 
 ### 4. Which Facebook page is the right one?
-The site links to two different Facebook pages, and both still work:
-- facebook.com/empowerimmigrants (in the contact section)
-- facebook.com/Empowering-Immigrants-100953902424549 (at the very bottom of each page)
-
-**Which one should we keep?** (Or keep both?)
-
-> Your answer:
+**Answered:** facebook.com/empowerimmigrants. Both Facebook links on the site now go there.
 
 ### 5. The LinkedIn link
 The LinkedIn icon goes to Jordyn Cambeiro's personal profile, not an organization page.
