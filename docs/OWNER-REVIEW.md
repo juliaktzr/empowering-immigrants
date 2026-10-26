@@ -9,7 +9,7 @@ edits are in `src/pages/*.astro` or `src/data/site.ts`.
 
 | # | Asset | Where | Status / action needed |
 | --- | --- | --- | --- |
-| A1 | **Hero photo "School Kids"** (Wix stock `11062b_…`) | Home hero | **Not migrated.** Wix stock media is licensed only for use on Wix sites. The hero currently uses the organization's own classroom photo, which also appears in "Our Mission". **Provide a hero photo you own** and replace `public/images/hero-{960,1600,2400}.webp`. |
+| A1 | Hero photo "School Kids" (Wix stock `11062b_…`) | Home hero | **Resolved.** Not migrated, since Wix stock media is licensed only for Wix sites. Decision: the hero uses the organization's own classroom photo, the same one shown in "Our Mission". To change it later, replace `public/images/hero-{960,1600,2400}.webp`. |
 | A2 | **Logo "Black and White Star in Circle"** (Wix clip art) | Header | **Not migrated.** Replaced with a similar placeholder SVG (`src/components/Logo.astro`, `public/favicon.svg`). **Provide the organization's real logo** (SVG preferred). |
 | A3 | Favicon | Browser tab | Wix used its own default Wix favicon. New favicons come from the placeholder mark; regenerate them when A2 arrives. |
 | A4 | KTNV "Positively Las Vegas" video (`public/media/ktnv-positively-las-vegas.mp4`, 29 MB) | Featured Media | Uploaded to Wix by the organization, but the footage belongs to KTNV. **Confirm you have permission to self-host it**, or ask KTNV for a public link to embed instead. It has no captions; ask KTNV for a caption file (WCAG 1.2.2). |
