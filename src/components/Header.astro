@@ -1,0 +1,45 @@
+---
+import Logo from './Logo.astro';
+import { NAV, SITE_NAME, routePath } from '../data/site';
+
+const current = routePath(Astro.url.pathname);
+---
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="/">
+      <Logo />
+      <span class="brand__name">{SITE_NAME}</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="site-nav-list" hidden>
+        <span class="site-nav__bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <ul id="site-nav-list" class="site-nav__list">
+        {NAV.map((item) => (
+          <li>
+            <a href={item.href} aria-current={item.href === current ? 'page' : undefined}>{item.label}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+  // Without JavaScript the menu simply stays expanded; the toggle only appears once wired up.
+  const nav = document.querySelector<HTMLElement>('.site-nav');
+  const toggle = nav?.querySelector<HTMLButtonElement>('.site-nav__toggle');
+  if (nav && toggle) {
+    toggle.hidden = false;
+    nav.dataset.enhanced = '';
+    const setOpen = (open: boolean) => toggle.setAttribute('aria-expanded', String(open));
+    toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+  }
+</script>

@@ -1,0 +1,14 @@
+---
+// Shared layout for the two inner pages, which use the same Wix template:
+// image on the left, centered copy and a "Get in Touch" button on the right.
+import Img from './Img.astro';
+---
+<section class="feature">
+  <div class="feature__media">
+    <Img name="road" alt="" sizes="(min-width: 900px) 560px, 100vw" />
+  </div>
+  <div class="feature__text">
+    <slot />
+    <a class="button" href="/#contact">Get in Touch</a>
+  </div>
+</section>

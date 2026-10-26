@@ -1,0 +1,61 @@
+---
+// Contact panel: the organization's main email as the call to action. "Copy address"
+// covers visitors whose browser has no mail app configured for mailto: links.
+import SocialLinks from './SocialLinks.astro';
+import { CONTACT, SOCIAL } from '../data/site';
+
+const [primary, ...otherEmails] = CONTACT.emails;
+const mailto = `mailto:${primary}`;
+---
+<div class="email-card">
+  <p class="email-card__eyebrow">Get in touch</p>
+  <a class="email-card__address" href={mailto}>{primary}</a>
+  <div class="email-card__actions">
+    <a class="button email-card__primary" href={mailto}>
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 5.5h18v13H3zM3.5 6l8.5 7 8.5-7" /></svg>
+      Email us
+    </a>
+    <button class="email-card__copy" type="button" data-copy={primary} hidden>
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" d="M8 8h12v12H8zM4 16V4h12" /></svg>
+      <span data-copy-label>Copy address</span>
+    </button>
+  </div>
+  <p class="visually-hidden" role="status" aria-live="polite" data-copy-status></p>
+
+  <div class="email-card__more">
+    <p class="email-card__more-title">You can also reach us at</p>
+    <ul class="email-card__list">
+      {otherEmails.map((email) => <li><a href={`mailto:${email}`}>{email}</a></li>)}
+      <li><a href={`tel:${CONTACT.phone.tel}`}>{CONTACT.phone.display}</a></li>
+    </ul>
+    <SocialLinks {...SOCIAL.contact} size={22} />
+  </div>
+</div>
+
+<script>
+  // Shown only when the Clipboard API is available, so the button never fails silently.
+  const button = document.querySelector<HTMLButtonElement>('[data-copy]');
+  const label = button?.querySelector<HTMLElement>('[data-copy-label]');
+  const status = document.querySelector<HTMLElement>('[data-copy-status]');
+  if (button && label && status && navigator.clipboard && window.isSecureContext) {
+    button.hidden = false;
+    let timer: number | undefined;
+    button.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(button.dataset.copy!);
+        label.textContent = 'Copied!';
+        status.textContent = 'Email address copied to clipboard.';
+        button.dataset.copied = '';
+      } catch {
+        label.textContent = 'Copy failed';
+        status.textContent = 'Could not copy. Please select the address and copy it manually.';
+      }
+      clearTimeout(timer);
+      timer = window.setTimeout(() => {
+        label.textContent = 'Copy address';
+        status.textContent = '';
+        delete button.dataset.copied;
+      }, 2500);
+    });
+  }
+</script>

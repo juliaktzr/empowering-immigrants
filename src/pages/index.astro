@@ -1,0 +1,128 @@
+---
+import Base from '../layouts/Base.astro';
+import Img from '../components/Img.astro';
+import EmailContact from '../components/EmailContact.astro';
+import { LEAF_URL } from '../data/site';
+---
+<Base
+  title="Home | EMPOWERING IMMIGRANTS"
+  description="Empowering Immigrants is a 501(c)(3) nonprofit helping predominantly Spanish-speaking students become proficient in English through flash cards and LEAF, a free flash-card app."
+>
+  <section class="hero" aria-labelledby="hero-title">
+    <Img name="hero" alt="" class="hero__bg" eager sizes="100vw" />
+    <h1 id="hero-title" class="hero__title">Experience Empowering Immigrants</h1>
+  </section>
+
+  <section class="split split--black" aria-labelledby="mission-title">
+    <div class="split__media split__media--narrow">
+      <Img name="mission" alt="Elementary students seated on a classroom floor listen to a volunteer standing beside an alphabet wall." sizes="(min-width: 900px) 30vw, 100vw" />
+    </div>
+    <div class="split__text">
+      <h2 id="mission-title" class="section-title">Our Mission</h2>
+      <p>Empowering Immigrants is driven by a single goal; to do our part in making the world a better place for all. Our mission is to enhance predominately Spanish speaking students to speak proficient English with the use of flashcards. Some students are not equipped as well as others and with our help students who need more help will have supplementary materials to get ahead.</p>
+    </div>
+  </section>
+
+  <section class="split split--dark" aria-labelledby="drive-title">
+    <div class="split__media">
+      <Img name="drive" alt="Two young volunteers stand in front of a school mural of Arturo Cambeiro's quote, painted with pink blossom trees." sizes="(min-width: 900px) 42vw, 100vw" />
+    </div>
+    <div class="split__text">
+      <h2 id="drive-title" class="section-title">The Drive Behind the Organization</h2>
+      <p>EMPOWERING IMMIGRANTS is a 501 (c) (3) non profit organization.</p>
+      <p>A man named Arturo Cambeiro had a vision to make Las Vegas, Nevada a better place. Arturo was an immigrant from Cuba and spoke very little English. He came to the United States with literally nothing, but determination to make life better for him, his family, and others.</p>
+      <p>With his determination, hard work, and perseverance he became a well known architect. When he passed away in 1990, he was recognized as an outstanding member in the Las Vegas, Nevada community and an elementary school was built in his name.</p>
+      <p>This organization will not only carry on Arturo Cambeiro's legacy of helping others to succeed, but will also help others feel confident, successful in their daily lives.</p>
+    </div>
+  </section>
+
+  <section class="quote" aria-label="Quote from Arturo Cambeiro">
+    <Img name="students-cards-1" alt="Students at a classroom table write out and sort red flash cards." class="quote__img" sizes="(min-width: 900px) 20vw, 50vw" />
+    <figure class="quote__body">
+      <svg class="quote__mark" width="44" height="40" viewBox="0 0 44 40" aria-hidden="true" focusable="false">
+        <path fill="none" stroke="currentColor" stroke-width="3" d="M3 3h15v18l-8 16H4l6-14H3zM25 3h15v18l-8 16h-6l6-14h-7z" />
+      </svg>
+      <blockquote>
+        <p>You must work hard. If you do, you can get there, you can get what you want. If you sacrafice, this country will give you an opportunity".</p>
+      </blockquote>
+      <figcaption>Arturo Cambeiro - Cuban Immigrant</figcaption>
+    </figure>
+    <Img name="students-cards-2" alt="A smiling student wearing a face mask holds up handmade red flash cards in a classroom." class="quote__img" sizes="(min-width: 900px) 20vw, 50vw" />
+  </section>
+
+  <section class="leaf" aria-labelledby="leaf-title">
+    <div class="leaf__text">
+      <h2 id="leaf-title" class="leaf__title">Learning English in a Flash</h2>
+      <p>The app was created to scale the delivery of the flashcards and reach more students. <em>LEAF is an app that is available to all students at school and at home. The app does the following:</em></p>
+      <ul class="leaf__list">
+        <li>The app uses videos of middle and high school students speaking words in Spanish and English to form an interactive environment for students learning English</li>
+        <li>Enhances Spanish and English words by categories (animals, colors, household items etc.)</li>
+        <li>The app is a visual and audio tool that allows a student to not only see the picture of a word, but hear the word as well.</li>
+        <li>The app targets students in grades K-3</li>
+        <li>LEAF is supported by many media platforms (Apple and Android) that allows schools and teachers easy access for download capabilities when they need it.</li>
+        <li><a href={LEAF_URL} target="_blank" rel="noopener noreferrer">LEAF<span class="visually-hidden"> (opens in a new tab)</span></a> is also available online.</li>
+        <li>The app is FREE!!!!</li>
+      </ul>
+    </div>
+    <div class="leaf__phones leaf__phones--left">
+      <Img name="leaf-home" alt="LEAF app home screen reading “Learn English in a Flash!” with categories such as Animales and Colores." sizes="180px" />
+      <Img name="leaf-deck" alt="LEAF app deck screen for Transportación, 21 cards, with a Play Deck button." sizes="180px" />
+    </div>
+    <div class="leaf__phones leaf__phones--right">
+      <Img name="leaf-card-es" alt="LEAF flash card for the Spanish word almuerzo, showing a photo of a child eating lunch and a video of a student saying the word." sizes="180px" />
+      <Img name="leaf-card-en" alt="The same LEAF flash card flipped to the English word lunch." sizes="180px" />
+    </div>
+  </section>
+
+  <section class="ways" aria-labelledby="ways-title">
+    <Img name="ways-swing" alt="" class="ways__bg" sizes="100vw" />
+    <div class="ways__text">
+      <h2 id="ways-title" class="section-title section-title--white">Ways We Help</h2>
+      <p>Empowering Immigrants is an organization of changing and shaping lives. Starting from scratch, we are working with an elementary school and expanding to others to  create Spanish and English flash cards for students to take home and learn the English language. Our goal is to allow predominant Spanish speaking students become proficient in the English speaking language.</p>
+    </div>
+  </section>
+
+  <section class="media" aria-labelledby="media-title">
+    <h2 id="media-title" class="section-title">Featured Media</h2>
+    <div class="media__grid">
+      <div class="media__item">
+        <video
+          class="media__video"
+          controls
+          preload="none"
+          playsinline
+          poster="/images/ktnv-poster-1280.webp"
+          width="1280"
+          height="720"
+          aria-label="KTNV 13 Positively Las Vegas segment about Empowering Immigrants"
+        >
+          <source src="/media/ktnv-positively-las-vegas.mp4" type="video/mp4" />
+          Your browser can't play this video. <a href="/media/ktnv-positively-las-vegas.mp4">Download the KTNV segment (MP4)</a>.
+        </video>
+        <Img name="ktnv-logo" alt="KTNV 13 Las Vegas (ABC)" class="media__logo media__logo--ktnv" sizes="330px" />
+      </div>
+      <div class="media__item">
+        <iframe
+          class="media__video"
+          src="https://www.youtube-nocookie.com/embed/9iRQ6oIAnak"
+          title="Jóvenes ayudan a niños aprender el inglés (YouTube)"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          width="1280"
+          height="720"
+        ></iframe>
+        <Img name="univision-logo" alt="Univision" class="media__logo media__logo--univision" sizes="140px" />
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <div class="contact__intro">
+      <h2 id="contact-title" class="contact__title">Empowering Immigrants</h2>
+      <p>Empowering Immigrants is about reaching out and helping others when they need it the most. So many times, we go about our day and forget that their are others out there that could use an extra boost.</p>
+    </div>
+    <EmailContact />
+  </section>
+</Base>
