@@ -1,66 +1,182 @@
-# Items for owner approval
+# Website review: what we need from you
 
-Site copy was migrated **verbatim**, typos included. Nothing below has been changed
-without approval except the items marked **Changed**, which were necessary for the
-site to be honest, functional, or accessible. Reply with approve/reject per item; most
-edits are in `src/pages/*.astro` or `src/data/site.ts`.
+We've rebuilt the Empowering Immigrants website so it no longer depends on Wix. It looks
+and reads the same as before. **We copied every word exactly as it was, including spelling
+mistakes**, because we didn't want to change anything without your OK.
 
-## A. Assets: rights and replacement files needed
+This page lists the decisions only you can make. It should take about 15 minutes. Just write
+your answer under each question (or reply by email with the question numbers).
 
-| # | Asset | Where | Status / action needed |
+---
+
+## Part 1: Questions for you
+
+### 1. Your logo
+The old site used a ready-made icon from Wix's library, which we're not allowed to take off
+Wix. For now there's a look-alike placeholder (a white "V" in a gray circle).
+
+**Do you have the organization's real logo?** If so, please send us the original file
+(the highest quality version you have). If not, is the placeholder OK for now?
+
+> Your answer:
+
+### 2. The KTNV news video
+The "Positively Las Vegas" news segment is now stored with the website itself. The footage
+belongs to KTNV (Channel 13), so we want to make sure that's OK.
+
+**Do you have KTNV's permission to show this video on your site?** If you're not sure, we can
+ask KTNV for a link to their own copy instead, or remove the video.
+
+> Your answer:
+
+### 3. Photos of children
+Several photos show students' faces (the classroom, the flash-card photos, and the LEAF app
+screenshots). We removed hidden location data from all of them.
+
+**Do you have permission from the families or schools to keep showing these photos?**
+
+> Your answer:
+
+### 4. Which Facebook page is the right one?
+The site links to two different Facebook pages, and both still work:
+- facebook.com/empowerimmigrants (in the contact section)
+- facebook.com/Empowering-Immigrants-100953902424549 (at the very bottom of each page)
+
+**Which one should we keep?** (Or keep both?)
+
+> Your answer:
+
+### 5. The LinkedIn link
+The LinkedIn icon goes to Jordyn Cambeiro's personal profile, not an organization page.
+
+**Is that what you want?** If the organization has its own LinkedIn page, send us the link.
+
+> Your answer:
+
+### 6. Contact details on the site
+The site shows these publicly:
+- empoweringimmigrants@gmail.com (the main email)
+- Cambeirokatelyn@gmail.com
+- 702-217-3540
+
+**Should all three stay public?**
+
+> Your answer:
+
+### 7. Is this still true?
+- "Starting from scratch, we are working with an elementary school and expanding to
+  others…" **Is this still accurate, or has the program grown?**
+- One of your goals is "to post success stories." **Do you have any stories you'd like to
+  add?**
+- The site says the LEAF app works on Apple and Android. **Is LEAF in the App Store or
+  Google Play?** If so, send us the links and we'll add download buttons. If not, we can
+  reword that line.
+- The bottom of every page says "©2021 by Empower Immigrants." **Should it say "Empowering
+  Immigrants" and the current year?**
+
+> Your answers:
+
+### 8. Menu names
+The menu has two items that look almost the same, "Empowering Immigrants" and "EMPOWERING
+IMMIGRANTS", but they go to different pages. Visitors can't tell them apart.
+
+**Can we rename them?** Our suggestion is **"Our Work"** and **"Purpose & Goals"**.
+
+> Your answer:
+
+### 9. The "Empowering Immigrants" page
+This page looks like it still has sample text from the Wix template:
+- Under the title it says **"Service Subitle"**, which is placeholder text (with a typo).
+- The paragraph "With this initiative, our goal is to promote great opportunities for those
+  in need…" also sounds like generic template text.
+
+**Would you like to replace these with your own words, or should we remove them?**
+
+> Your answer:
+
+### 10. Search engine descriptions
+When someone finds your site on Google, a short description shows under the link. The old
+site didn't have one, so we wrote one per page using your existing wording. For example,
+for the home page:
+
+> *"Empowering Immigrants is a 501(c)(3) nonprofit helping predominantly Spanish-speaking
+> students become proficient in English through flash cards and LEAF, a free flash-card app."*
+
+**Is this OK?**
+
+> Your answer:
+
+---
+
+## Part 2: Spelling and grammar fixes
+
+These are on the site right now. **Write "yes" next to each fix you'd like us to make,**
+or just say "fix them all."
+
+| # | Where | It says now | We suggest |
 | --- | --- | --- | --- |
-| A1 | Hero photo "School Kids" (Wix stock `11062b_…`) | Home hero | **Resolved.** Not migrated, since Wix stock media is licensed only for Wix sites. Decision: the hero uses the organization's own classroom photo, the same one shown in "Our Mission". To change it later, replace `public/images/hero-{960,1600,2400}.webp`. |
-| A2 | **Logo "Black and White Star in Circle"** (Wix clip art) | Header | **Not migrated.** Replaced with a similar placeholder SVG (`src/components/Logo.astro`, `public/favicon.svg`). **Provide the organization's real logo** (SVG preferred). |
-| A3 | Favicon | Browser tab | Wix used its own default Wix favicon. New favicons come from the placeholder mark; regenerate them when A2 arrives. |
-| A4 | KTNV "Positively Las Vegas" video (`public/media/ktnv-positively-las-vegas.mp4`, 29 MB) | Featured Media | Uploaded to Wix by the organization, but the footage belongs to KTNV. **Confirm you have permission to self-host it**, or ask KTNV for a public link to embed instead. It has no captions; ask KTNV for a caption file (WCAG 1.2.2). |
-| A5 | KTNV and Univision logos | Featured Media | Third-party trademarks, used only to say "as featured in". This is generally accepted, but confirm you're comfortable with it. |
-| A6 | Organization photos (classroom, mural, students with flash cards) and LEAF screenshots | Home | Treated as the organization's own uploads. **Several show identifiable minors. Confirm photo/media consent is on file** for continued publication. Location metadata (EXIF/GPS) was stripped from all files. |
-| A7 | Road photo (Frederik Löwer) and swing photo (Myles Tan) | Inner pages / Ways We Help | Unsplash images, free to reuse under the Unsplash License. No action needed. |
-| A8 | Oswald and Raleway fonts | Site-wide | SIL Open Font License; license files are in `public/fonts/`. No action needed. |
-| A9 | Facebook/LinkedIn icons | Contact, footer | Wix icons replaced with simple inline SVGs. No action needed. |
+| 1 | Arturo Cambeiro quote | "If you **sacrafice**…" | "If you **sacrifice**…" (the mural in the photo spells it right) |
+| 2 | Arturo Cambeiro quote | Ends with a quotation mark (") but never opens one | Remove the extra mark |
+| 3 | Contact section | "forget that **their** are others" | "forget that **there** are others" |
+| 4 | Our Mission | "driven by a single goal**;** to do our part" | "driven by a single goal**:** to do our part" |
+| 5 | Our Mission | "to enhance predominately Spanish speaking students to speak proficient English" | "to help predominantly Spanish-speaking students become proficient in English" |
+| 6 | Our Mission and Purpose page | "predominately" | "predominantly" |
+| 7 | The Drive Behind the Organization | "501 (c) (3) non profit organization" | "501(c)(3) nonprofit organization" |
+| 8 | The Drive Behind the Organization | "help others feel confident, successful in their daily lives" | "help others feel confident **and** successful in their daily lives" |
+| 9 | Purpose and Goals page | "the flash cards allowed struggling students gain confidence" | "the flash cards **helped** struggling students gain confidence" |
+| 10 | Ways We Help | "allow predominant Spanish speaking students become proficient" | "help predominantly Spanish-speaking students become proficient" |
+| 11 | LEAF section | "platforms (Apple and Android) that **allows** schools" | "…that **allow** schools" |
 
-## B. Content changed (necessary)
+> Your answers:
 
-| # | Was | Now | Why |
-| --- | --- | --- | --- |
-| B1 | "©2021 by Empower Immigrants. Proudly created with Wix.com" | "©2021 by Empower Immigrants." | The site is no longer built with Wix, so the claim would be false. See also C11. |
-| B2 | "Let's Chat!" Wix Chat bubble | Removed | It only works on Wix. Contact is by form, email, and phone. |
-| B3 | "Get in Touch" on `/empowering-immigrants` linked nowhere; on `/empowering-immigrants-1` it linked to `/empowering-immigrants`, which has no contact details | Both go to the contact section (`/#contact`) | Neither button reached a way to get in touch. |
-| B4 | "Get in Touch" button: white text on yellow | Black text on yellow | White on `#FFC03A` has a 1.6:1 contrast ratio, which fails WCAG AA (4.5:1 required). |
-| B5 | Wix contact form (Name, Email, Phone, Address, Subject, Message) | Email panel: "Email us" button + "Copy address" for empoweringimmigrants@gmail.com; second email, phone and socials listed below it | Requested, so there's no form service to set up or maintain. |
-| B6 | Phone number was plain text | Tap-to-call `tel:` link | Usability; the number is unchanged. |
-| B7 | All-caps headings and quote typed in capitals | Same appearance, applied with CSS `text-transform` | Screen readers may spell out all-caps text letter by letter. |
+---
 
-## C. Typos and wording: kept as published, awaiting approval
+## Part 3: Small changes we already made (just so you know)
 
-| # | Location | Current text | Suggested |
-| --- | --- | --- | --- |
-| C1 | Quote | "IF YOU **SACRAFICE**, THIS COUNTRY…" | "sacrifice" (the school mural in the photo spells it correctly) |
-| C2 | Quote | Ends with `OPPORTUNITY".` but has no opening quotation mark | Remove the stray `"`, or add an opening one |
-| C3 | Contact blurb | "forget that **their** are others" | "there are others" |
-| C4 | `/empowering-immigrants` | "**Service Subitle**" | This is unedited Wix template placeholder text with a typo. Replace with a real subtitle or delete it. |
-| C5 | `/empowering-immigrants` | Whole paragraph ("With this initiative, our goal is to promote great opportunities…") | Looks like generic Wix template copy. Confirm it or replace it. |
-| C6 | Mission | "driven by a single goal**;** to do our part" | Colon instead of semicolon |
-| C7 | Mission | "to enhance predominately Spanish speaking students to speak proficient English" | "to help predominantly Spanish-speaking students become proficient in English" |
-| C8 | Mission, purpose page | "predominately" / "predominately speaking Spanish students" | "predominantly Spanish-speaking students" |
-| C9 | Drive | "501 (c) (3) non profit organization" | "501(c)(3) nonprofit organization" |
-| C10 | Drive | "help others feel confident, successful in their daily lives" | "feel confident and successful" |
-| C11 | Footer | "©2021 by **Empower** Immigrants" | "© 2021–2026 Empowering Immigrants" (name mismatch; year may be outdated) |
-| C12 | Purpose page | "allowed struggling students gain confidence" | "helped struggling students gain confidence" |
-| C13 | Ways We Help | "allow predominant Spanish speaking students become proficient" | "help predominantly Spanish-speaking students become proficient" |
-| C14 | Ways We Help | "expanding to others to  create" | Double space (invisible in the browser) |
-| C15 | LEAF bullets | "supported by many media platforms (Apple and Android) that allows…" | "that allow…". Also see D3. |
+We made these because the old versions were broken, no longer true, or hard for some
+visitors to use. Nothing about your message changed. Tell us if you'd like any of them undone.
 
-## D. Facts to confirm (possibly outdated)
+- **Removed "Proudly created with Wix.com"** from the bottom of each page, since the site
+  isn't on Wix anymore.
+- **Removed the "Let's Chat!" bubble.** It was a Wix feature that doesn't work elsewhere.
+- **Replaced the contact form with your email address.** Visitors click "Email us" to write
+  to you, or "Copy address" to copy it. There's no form to manage.
+- **Fixed the "Get in Touch" buttons.** On the old site, one went nowhere and the other went
+  to a page without contact details. Both now jump to your contact information.
+- **Made the "Get in Touch" button text black instead of white.** White on yellow was hard to
+  read, especially for people with low vision.
+- **The phone number can now be tapped to call** on a phone.
+- **The home page's top photo** is now your own classroom photo (the same one in "Our Mission").
+  The old one was a Wix stock photo that can only be used on Wix sites.
 
-| # | Item |
-| --- | --- |
-| D1 | "Starting from scratch, we are working with an elementary school and expanding to others": is this still current? |
-| D2 | "To be able to post success stories…" is listed as a goal. Are there success stories to add now? |
-| D3 | LEAF "supported by… Apple and Android": is the app in the App Store / Google Play? If so, add store links. If not, consider rewording. |
-| D4 | Two different Facebook URLs are in use: `facebook.com/empowerimmigrants/` (contact block) and `facebook.com/Empowering-Immigrants-100953902424549` (footer). Both currently load. Which is the official page? |
-| D5 | The "LinkedIn" icon links to a personal profile (Jordyn Cambeiro), not an organization page. Is that intended? |
-| D6 | A personal email (Cambeirokatelyn@gmail.com) and a phone number are published. Confirm they should remain public. |
-| D7 | Nav labels "Empowering Immigrants" and "EMPOWERING IMMIGRANTS" go to different pages but read the same, which confuses visitors and screen readers. Suggested labels: "Our Work" and "Purpose & Goals" (edit `NAV` in `src/data/site.ts`). |
-| D8 | Page titles: `/empowering-immigrants-1` is "EMPOWERING IMMIGRANTS \| EMPOWERING IMMIGRANTS". Suggested: "Purpose and Goals \| Empowering Immigrants". |
-| D9 | New meta descriptions (not visible on the page; used by search engines and link previews) were drafted from existing copy. They're in each page's `<Base description=…>`. Please approve them. |
+---
+
+## Part 4: Already taken care of (no action needed)
+
+- The road photo and the swing photo come from Unsplash, a free photo site. Anyone can use
+  them.
+- The fonts are free to use.
+- The Facebook and LinkedIn icons were redrawn, so they don't depend on Wix.
+
+---
+
+<details>
+<summary>Notes for whoever updates the website (technical)</summary>
+
+- Page text: `src/pages/*.astro`. Menu labels, contact details, social links and the
+  copyright line: `src/data/site.ts`.
+- Logo (Q1): placeholder in `src/components/Logo.astro` and `public/favicon.svg`; regenerate
+  `favicon.ico` and `apple-touch-icon.png` from the real logo.
+- KTNV video (Q2): `public/media/ktnv-positively-las-vegas.mp4` (29 MB, no captions; ask KTNV
+  for a caption file if it stays).
+- Hero photo: `public/images/hero-{960,1600,2400}.webp`.
+- Search descriptions (Q10): the `description` prop on `<Base>` in each page.
+- Page title for `/empowering-immigrants-1` is "EMPOWERING IMMIGRANTS | EMPOWERING
+  IMMIGRANTS"; if the menu is renamed (Q8), consider "Purpose and Goals | Empowering
+  Immigrants".
+- "Ways We Help" has a double space in "expanding to others to  create" (invisible on the page).
+- All-caps headings are typed in normal case and styled as capitals, so screen readers don't
+  spell them out letter by letter.
+- KTNV and Univision logos are used only to show where you were featured.
+
+</details>

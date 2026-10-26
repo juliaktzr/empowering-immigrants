@@ -113,7 +113,7 @@ cancelling anything.
 
 - Text: edit `src/pages/*.astro`. Contact details, nav labels, and social links are in `src/data/site.ts`.
 - Images: add a resized `.webp` file to `public/images/` named `<name>-<width>.webp` and list it
-  in `src/data/images.ts`. Replacing the hero image (see OWNER-REVIEW A1) only means overwriting
+  in `src/data/images.ts`. Replacing the hero image only means overwriting
   the three `hero-*.webp` files.
 - Brand colors and fonts: CSS variables at the top of `src/styles/global.css`.
 
