@@ -104,10 +104,9 @@ for the home page:
 
 ## Part 2: Spelling and grammar fixes
 
-These are on the site right now. **Write "yes" next to each fix you'd like us to make,**
-or just say "fix them all."
+**Done:** you approved all 11 fixes below, and they're now on the site.
 
-| # | Where | It says now | We suggest |
+| # | Where | It used to say | Now says |
 | --- | --- | --- | --- |
 | 1 | Arturo Cambeiro quote | "If you **sacrafice**…" | "If you **sacrifice**…" (the mural in the photo spells it right) |
 | 2 | Arturo Cambeiro quote | Ends with a quotation mark (") but never opens one | Remove the extra mark |
@@ -120,8 +119,6 @@ or just say "fix them all."
 | 9 | Purpose and Goals page | "the flash cards allowed struggling students gain confidence" | "the flash cards **helped** struggling students gain confidence" |
 | 10 | Ways We Help | "allow predominant Spanish speaking students become proficient" | "help predominantly Spanish-speaking students become proficient" |
 | 11 | LEAF section | "platforms (Apple and Android) that **allows** schools" | "…that **allow** schools" |
-
-> Your answers:
 
 ---
 
@@ -168,7 +165,6 @@ visitors to use. Nothing about your message changed. Tell us if you'd like any o
 - Page title for `/empowering-immigrants-1` is "EMPOWERING IMMIGRANTS | EMPOWERING
   IMMIGRANTS"; if the menu is renamed (Q8), consider "Purpose and Goals | Empowering
   Immigrants".
-- "Ways We Help" has a double space in "expanding to others to  create" (invisible on the page).
 - All-caps headings are typed in normal case and styled as capitals, so screen readers don't
   spell them out letter by letter.
 - KTNV and Univision logos are used only to show where you were featured.
